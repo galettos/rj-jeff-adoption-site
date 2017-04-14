@@ -11,20 +11,75 @@
  * It is generally better to create a new file per style scope.
  *
  *= require font-awesome
+ *= require animate
  *= require_tree .
  *= require_self
  */
 
 
-#letter {
-	background-color: rgba(123, 118, 102, .1);
+
+
+#shade {
+	background-color: rgba(123, 118, 102, .2);
 }
 
-#aboutrj {
-	background-color: rgba(116, 112, 99, .5);
+.shade {
+  background-color: rgba(123, 118, 102, .2);
+}
+
+
+section#skyline {
+	background-image: url("<%= asset_path 'skyline-01.svg' %>");
+	background-position: cover;
+}
+
+p.byline  {
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #aeaeae;
 }
 
 span  {
   font-weight: 600;
+}
+
+
+
+
+
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 

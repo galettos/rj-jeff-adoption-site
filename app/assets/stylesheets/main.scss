@@ -1711,13 +1711,13 @@
 	}
 
 		p.major {
-			font-size: 1.25rem;
+			font-size: 1rem;
 		}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.375;
-		letter-spacing: -0.05em;
+		letter-spacing: 0em;
 		margin: 0 0 1rem 0;
 	}
 
@@ -1728,7 +1728,7 @@
 
 	h1 {
 		font-family: "proxima-nova";		
-		font-size: 2.5em;
+		font-size: 2rem;
 		line-height: 1.2;
 		font-weight: 300;
 		color: #4D5568;
@@ -1736,7 +1736,7 @@
 
 	h2 {
 		font-family: "proxima-nova";
-		font-size: 2.25rem;
+		font-size: 1.7rem;
 		letter-spacing: 2px;
 
 	}
@@ -3261,6 +3261,7 @@
 		position: relative;
 		text-align: left;
 		overflow-x: hidden;
+		    height: 700px;
 	}
 
 		.banner.style1 .content {
